@@ -10,6 +10,7 @@ public class Vehiculo {
         this.marca=pmar;
         this.modelo=pmod;
         this.año=paño;
+        this.situacion=false;
     }
 
     public String getPatente() {
@@ -57,7 +58,7 @@ public class Vehiculo {
         System.out.println("Marca: "+getMarca());
         System.out.println("Modelo: "+getModelo());
         System.out.println("Año: "+getAño());
-        if(isSituacion()==true){
+        if(isSituacion()){
             System.out.println("Situacion: Arrendado");
         }else{
             System.out.println("Situacion: No Arrendado");
