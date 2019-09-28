@@ -38,41 +38,41 @@ public class PrincipalAdminEstudiantes {
                     continue;
                 }
 
-                Scanner marca= new Scanner(System.in);
+                Scanner marca= new Scanner(System.in);     // INGRESAR MARCA
                 System.out.println("Ingrese la marca: ");
                 String pmarca=marca.nextLine();
 
-                Scanner model=new Scanner(System.in);
+                Scanner model=new Scanner(System.in);     // INGRESAR MODELO
                 System.out.println("Ingrese el modelo: ");
                 String pmod=model.nextLine();
 
-                Scanner año=new Scanner(System.in);
+                Scanner año=new Scanner(System.in);       // INGRESAR AÑO
                 System.out.println("Ingrese el año: ");
                 int paño= año.nextInt();
 
-                if(!Validation.validationAño(paño)){
+                if(!Validation.validationAño(paño)){       // VALIDAR AÑO
                     System.out.println("Error: Año inválido.");
                     continue;
                 }
 
-                Scanner fecha=new Scanner(System.in);
+                Scanner fecha=new Scanner(System.in);      // INGRESAR FECHA
                 System.out.println("Ingrese la fecha de arriendo: ");
                 String pfec=fecha.nextLine();
 
-                Scanner medio=new Scanner(System.in);
+                Scanner medio=new Scanner(System.in);       // INGRESAR MEDIO DE PAGO
                 System.out.println("Ingrese el medio de pago: ");
                 char mp= medio.next().charAt(0);
 
-                if(!Validation.validationMedioPago(mp)){
+                if(!Validation.validationMedioPago(mp)){          // VALIDAR MEDIO DE PAGO
                     System.out.println("Error: Medio de pago inválido.");
                     continue;
                 }
 
-                Scanner dias=new Scanner(System.in);
+                Scanner dias=new Scanner(System.in);             // INGRESAR DIAS DE ARRIENDO
                 System.out.println("Ingrese los días de arriendo");
                 int pdias= dias.nextInt();
 
-                if(!Validation.validationDias(pdias)){
+                if(!Validation.validationDias(pdias)){          // VALIDAR LOS DIAS DE ARRIENDO
                     System.out.println("Error: No se puede arrendar por esa cantidad de días.");
                     continue;
                 }
@@ -95,7 +95,7 @@ public class PrincipalAdminEstudiantes {
             }
 
             if(opcion==2){
-                Scanner myObj2 = new Scanner(System.in);
+                Scanner myObj2 = new Scanner(System.in);      // INGRESAR PATENTE
                 System.out.println("Ingrese la patente: ");
 
                 String patente= myObj2.nextLine();
