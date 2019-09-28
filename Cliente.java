@@ -6,6 +6,7 @@ public class Cliente {
     public Cliente(String prut, String pnom){
         this.rut=prut;
         this.nombre=pnom;
+        this.vigencia=true;
     }
 
     public String getRut() {
@@ -35,7 +36,7 @@ public class Cliente {
     public void imprimirDatosCliente(){
         System.out.println("Nombre: "+getNombre());
         System.out.println("Rut: "+getRut());
-        if(isVigencia()==true){
+        if(isVigencia()){
             System.out.println("Vigencia: Vigente");
         }else{
             System.out.println("Vigencia: No Vigente");
